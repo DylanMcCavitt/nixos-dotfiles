@@ -15,8 +15,7 @@
 in {
   programs.git = {
     enable = true;
-    userName = "DylanMcCavitt";
-    userEmail = "dylanmccavitt2015@gmail.com";
+    extraCOnfig.init.defaultBranch = "master";
   };
   home.username = "dylan";
   home.homeDirectory = "/home/dylan";

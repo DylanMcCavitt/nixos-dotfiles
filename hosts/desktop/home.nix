@@ -10,6 +10,7 @@
     ../../modules/home/theme.nix
     ../../modules/home/common.nix
     ../../modules/home/nvf.nix
+    ./private.nix
   ];
 
   my.theme.name = "gruvbox";
