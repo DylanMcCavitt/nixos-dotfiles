@@ -10,7 +10,7 @@
     ../../modules/home/theme.nix
     ../../modules/home/common.nix
     ../../modules/home/nvf.nix
-    ./private.nix
+    /home/dylan/nixos-dotfiles/hosts/desktop/private.nix
   ];
 
   my.theme.name = "gruvbox";
