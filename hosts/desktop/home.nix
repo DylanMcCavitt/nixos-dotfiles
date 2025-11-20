@@ -18,7 +18,6 @@
     enable = true;
     shellAliases = {
       btw = "echo nixos btw";
-      # NOTE: uses the 'desktop' host name from flake.nix
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#desktop";
     };
     profileExtra = ''

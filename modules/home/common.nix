@@ -15,7 +15,7 @@
 in {
   programs.git = {
     enable = true;
-    extraCOnfig.init.defaultBranch = "master";
+    extraConfig.init.defaultBranch = "master";
   };
   home.username = "dylan";
   home.homeDirectory = "/home/dylan";
