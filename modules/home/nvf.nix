@@ -49,8 +49,73 @@ in {
         };
 
         componentSeparator = {
-          left = "";
-          right = "";
+          left = "";
+          right = "";
+        };
+
+        activeSection = {
+          a = [
+            ''
+              {
+                "mode",
+                icons_enabled = true,
+              }
+            ''
+          ];
+          b = [
+            ''
+              {
+                "filetype",
+                colored = true,
+                icon_only = true,
+              }
+            ''
+            ''
+              {
+                "filename",
+                symbols = {modified = '  ', readonly = '  '},
+              }
+            ''
+          ];
+          c = [
+            ''
+              {
+                "diff",
+                colored = false,
+                symbols = {added = '+', modified = '~', removed = '-'},
+              }
+            ''
+          ];
+          x = [
+            ''
+              {
+                "diagnostics",
+                sources = {'nvim_lsp', 'nvim_diagnostic'},
+                symbols = {error = '󰅙 ', warn = ' ', info = ' ', hint = '󰌵 '},
+                colored = true,
+              }
+            ''
+          ];
+          y = [
+            ''
+              {
+                "branch",
+                icon = '',
+              }
+            ''
+          ];
+          z = [
+            ''
+              {
+                "progress",
+              }
+            ''
+            ''
+              {
+                "location",
+              }
+            ''
+          ];
         };
       };
 
