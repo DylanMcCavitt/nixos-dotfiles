@@ -18,7 +18,7 @@
     enable = true;
     shellAliases = {
       btw = "echo nixos btw";
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#desktop";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#desktop --impure";
     };
     profileExtra = ''
       if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
