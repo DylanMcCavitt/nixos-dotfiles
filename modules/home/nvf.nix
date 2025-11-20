@@ -43,12 +43,12 @@ in {
           then "gruvbox-material"
           else "catppuccin";
 
-        sectionSeparators = {
+        sectionSeparator = {
           left = "";
           right = "";
         };
 
-        componentSeparators = {
+        componentSeparator = {
           left = "";
           right = "";
         };
