@@ -1,0 +1,106 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 30, 
+    "spacing": 4, 
+
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/sep",
+        "hyprland/window",
+        "custom/sep"
+    ],
+    "modules-center": [
+    ],
+
+    "modules-right": [
+        "custom/sep",
+        "network",
+        "custom/sep",
+        "cpu",
+        "custom/sep",
+        "memory",
+        "custom/sep",
+        "disk",
+        "custom/sep",
+        "clock",
+        "custom/sep",
+        "tray"
+    ],
+
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+	"format-icons":{        	
+		"1": "",	    	
+		"2": "",
+             	"3": "",
+             	"4": "" 
+	},
+        "swap-icon-label": true,
+	"persistent-workspaces": {
+        	"": 1,	    	
+		"": 2,
+             	"": 3,
+             	"": 4 
+        }
+    },
+    "hyprland/window" : {
+        "max-length": 40,
+        "seperate-outputs": false
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+        // "icons": {
+        //   "blueman": "bluetooth",
+        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        // }
+    },
+    "clock": {
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{icon}: {usage}%",
+	"format-icons": "",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{icon}: {used}GiB",
+	"format-icons": ""
+    },
+    "disk": {
+        "interval": 60,
+        "path": "/",
+        "format": " {free}",
+	"format-icons": ""
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "Bat: {capacity}% {icon} {time}",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "Bat {capacity}%",
+        "format-time": "{H}:{M}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format": "{icon}",
+	"format-wifi":"󱚽 ",
+	"format-ethernet": "",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "custom/sep": {
+        "format" : "|",
+        "interval" : 0
+    }
+}    
+

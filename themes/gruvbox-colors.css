@@ -1,0 +1,19 @@
+/* Base16 Gruvbox soft */
+@define-color base00 #32302f; /* Background */
+@define-color base01 #3c3836;
+@define-color base02 #504945;
+@define-color base03 #665c54;
+@define-color base04 #bdae93;
+@define-color base05 #d5c4a1; /* Foreground */
+@define-color base06 #ebdbb2;
+@define-color base07 #fbf1c7;
+
+@define-color base08 #fb4934; /* Red */
+@define-color base09 #fe8019; /* Orange */
+@define-color base0A #fabd2f; /* Yellow */
+@define-color base0B #b8bb26; /* Green */
+@define-color base0C #8ec07c; /* Aqua */
+@define-color base0D #83a598; /* Blue */
+@define-color base0E #d3869b; /* Purple */
+@define-color base0F #d65d0e; /* Brown */
+

@@ -1,0 +1,18 @@
+/* Base16 Catppuccin Macchiato */
+@define-color base00 #24273a; /* Base */
+@define-color base01 #1e2030; /* Mantle */
+@define-color base02 #363a4f; /* Surface0 */
+@define-color base03 #494d64; /* Surface1 */
+@define-color base04 #5b6078; /* Surface2 */
+@define-color base05 #cad3f5; /* Text */
+@define-color base06 #f0c6c6; /* Rosewater */
+@define-color base07 #b7bdf8; /* Lavender */
+
+@define-color base08 #ed8796; /* Red */
+@define-color base09 #f5a97f; /* Peach */
+@define-color base0A #eed49f; /* Yellow */
+@define-color base0B #a6da95; /* Green */
+@define-color base0C #8bd5ca; /* Teal */
+@define-color base0D #8aadf4; /* Blue */
+@define-color base0E #c6a0f6; /* Mauve */
+@define-color base0F #f4dbd6; /* Flamingo */

@@ -1,0 +1,67 @@
+@import "colors.css"; 
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base00;
+    color: @base05;
+    border-bottom: 0px solid @base00; 
+}
+
+#workspaces {
+    background-color: @base00;
+    margin: 4px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: @base03;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: @base05;
+    background-color: @base0C; 
+    border-radius: 15px;
+}
+
+#workspaces button.urgent {
+    color: @base00;
+    background-color: @base08; 
+    border-radius: 15px;
+}
+
+#clock, #battery, #cpu, #memory, #disk, #network, #pulseaudio, #tray {
+    padding: 0 10px;
+    margin: 4px 2px;
+    background-color: @base00;
+}
+
+#clock   { color: @base0D; }
+#cpu     { color: @base0C; }
+#memory  { color: @base0E; }
+#disk    { color: @base09; }
+#network { color: @base0B; }
+#network.disconnected { color: @base08; }
+#battery { color: @base0A; }
+
+#battery.critical { 
+    color: @base08; 
+    animation-name: blink; 
+    animation-duration: 0.5s; 
+    
+}
+
+#custom-sep {
+    color: @base03;
+    padding-right: 5px;
+}
+
+@keyframes blink {
+    to { color: @base00; background-color: @base08; }
+}
