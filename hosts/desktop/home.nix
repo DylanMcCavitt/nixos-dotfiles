@@ -10,7 +10,6 @@
     ../../modules/home/theme.nix
     ../../modules/home/common.nix
     ../../modules/home/nvf.nix
-    /home/dylan/nixos-dotfiles/hosts/desktop/private.nix
   ];
 
   my.theme.name = "gruvbox";
@@ -18,7 +17,7 @@
     enable = true;
     shellAliases = {
       btw = "echo nixos btw";
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#desktop --impure";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#desktop";
     };
     profileExtra = ''
       if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then

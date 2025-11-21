@@ -1,0 +1,50 @@
+/* catppuccin */
+window {
+  margin: 0px;
+  border: 2px solid #c6a0f6;
+  background-color: #24273a;
+  border-radius: 15px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size; 14px;
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  color: #cad3f5;
+  background-color: #363a4f;
+  border-radius: 5px;
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: #cad3f5;
+}
+
+#entry:selected {
+  background-color: #c6a0f6;
+  border-radius: 10px;
+  border: none;
+}
+
+#text:selected {
+  color: #24273a;
+}

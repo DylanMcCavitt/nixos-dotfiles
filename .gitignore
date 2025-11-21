@@ -1,4 +1,0 @@
-hosts/*/hardware-configuration.nix
-result
-.direnv
-**/private.nix

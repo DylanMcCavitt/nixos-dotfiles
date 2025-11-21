@@ -7,7 +7,7 @@
   ...
 }: {
   imports = [
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
     ../../modules/system/secrets.nix
   ];
 
@@ -17,10 +17,6 @@
     packages = with pkgs; [tree];
 
     hashedPasswordFile = config.sops.secrets.user_password.path;
-
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHE57f++Q9q9ltVxnohQNT5s6HXjupY66cUSgH+IfN5s dylan@dylan-desktop"
-    ];
   };
 
   boot.kernelParams = ["nvidia-drm.modeset=1"];
@@ -66,6 +62,7 @@
     foot
     hyprpaper
     tree
+    sops
   ];
 
   system.stateVersion = "25.05";

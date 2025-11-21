@@ -11,8 +11,14 @@
     hypr = "hypr";
     kitty = "kitty";
     waybar = "waybar";
+    wofi = "wofi";
   };
 in {
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv.enable = true;
+  };
   programs.git = {
     enable = true;
     extraConfig.init.defaultBranch = "master";
@@ -64,6 +70,8 @@ in {
       btop
       wl-clipboard
       cliphist
+      gruvbox-dark-gtk
+      catppuccin-gtk
     ])
     ++ (with pkgsUnstable; [
       go

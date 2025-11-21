@@ -16,6 +16,14 @@ in {
       viAlias = true;
       vimAlias = true;
 
+      git = {
+        enable = true;
+        gitsigns = {
+          enable = true;
+          codeActions.enable = true;
+        };
+      };
+
       startPlugins = [
         pkgs.vimPlugins.gruvbox-material
         pkgs.vimPlugins.catppuccin-nvim
